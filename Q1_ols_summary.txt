@@ -1,0 +1,35 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 Y_conc   R-squared:                       0.049
+Model:                            OLS   Adj. R-squared:                  0.043
+Method:                 Least Squares   F-statistic:                     795.8
+Date:                Sun, 07 Sep 2025   Prob (F-statistic):               0.00
+Time:                        11:05:29   Log-Likelihood:                 2166.5
+No. Observations:                1082   AIC:                            -4317.
+Df Residuals:                    1074   BIC:                            -4277.
+Df Model:                           7                                         
+Covariance Type:                  HC3                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0295      0.002     12.288      0.000       0.025       0.034
+s1             0.0295      0.002     12.288      0.000       0.025       0.034
+s2             0.0287      0.008      3.519      0.000       0.013       0.045
+s3            -0.0117      0.007     -1.611      0.107      -0.026       0.003
+s4             0.0571      0.012      4.682      0.000       0.033       0.081
+BMI_c         -0.0007      0.001     -0.718      0.473      -0.003       0.001
+BMI_c:s1      -0.0007      0.001     -0.718      0.473      -0.003       0.001
+BMI_c:s2      -0.0018      0.003     -0.542      0.588      -0.008       0.005
+BMI_c:s3       0.0007      0.003      0.236      0.813      -0.005       0.006
+BMI_c:s4      -0.0007      0.005     -0.136      0.892      -0.010       0.009
+==============================================================================
+Omnibus:                       79.010   Durbin-Watson:                   0.857
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              102.715
+Skew:                           0.629   Prob(JB):                     4.96e-23
+Kurtosis:                       3.835   Cond. No.                     3.25e+15
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The smallest eigenvalue is 2.04e-27. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
